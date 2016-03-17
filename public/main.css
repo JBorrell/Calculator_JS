@@ -1,0 +1,23 @@
+#calculator {
+  border: 1px solid black;
+  width: 180px;
+  padding: 20px;
+  margin: 0 auto;
+}
+#screen {
+  background: whitesmoke;
+  margin-bottom: 10px;
+  text-align: right;
+}
+#operation {
+  border-bottom: 2px solid white;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
