@@ -21,4 +21,20 @@ describe("Calculator", function() {
       expect(calculator.equals()).toEqual(2);
     });
   });
+  describe("Multiplication", function() {
+    it("Calculates 3 * 5", function() {
+      calculator.input(3);
+      calculator.multiply();
+      calculator.input(5);
+      expect(calculator.equals()).toEqual(15);
+    });
+  });
+  describe("Division", function() {
+    it("Calculates 7 / 2", function() {
+      calculator.input(7);
+      calculator.divide();
+      calculator.input(2);
+      expect(calculator.equals()).toEqual(3.5);
+    });
+  });
 });
