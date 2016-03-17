@@ -13,10 +13,12 @@ describe("Calculator", function() {
       expect(calculator.equals()).toEqual(3);
     });
   });
-  // describe("Subtraction", function() {
-  //   it("Should subtract 2 positive whole integers", function() {
-  //     calculator.subtract(7, 10);
-  //     expect(calculator.result).toEqual(-3);
-  //   });
-  // });
+  describe("Subtraction", function() {
+    it("Calculates 5 - 3", function() {
+      calculator.input(5);
+      calculator.subtract();
+      calculator.input(3);
+      expect(calculator.equals()).toEqual(2);
+    });
+  });
 });
