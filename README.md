@@ -16,3 +16,6 @@ Installation
 Additions
 =======
 Eventually it will include additional functions such as squares, square roots, trigonometric functions, logarithmic functions & pi.
+
+
+Created by [James Borrell](https://github.com/JBorrell)
