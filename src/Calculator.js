@@ -17,8 +17,11 @@ Calculator.prototype.divide = function () {
   this.operation.push('/')
 };
 Calculator.prototype.equals = function () {
-  if (this.operation[1] === '+') {return this.operation[0] + this.operation[2]};
-  if (this.operation[1] === '-') {return this.operation[0] - this.operation[2]};
-  if (this.operation[1] === '*') {return this.operation[0] * this.operation[2]};
-  if (this.operation[1] === '/') {return this.operation[0] / this.operation[2]};
+  return eval(this.operation.join(""))
+};
+Calculator.prototype.delete = function () {
+  this.operation.pop();
+};
+Calculator.prototype.clear = function () {
+  this.operation = []
 };

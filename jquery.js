@@ -37,6 +37,10 @@ $(document).ready(function(){
     calc.input(9);
     $("#operation").text(calc.operation.join(" "))
   });
+  $("#decimal").click(function(){
+    calc.input(".");
+    $("#operation").text(calc.operation.join(" "))
+  });
   $("#add").click(function(){
     calc.add();
     $("#operation").text(calc.operation.join(" "))
@@ -52,6 +56,19 @@ $(document).ready(function(){
   $("#divide").click(function(){
     calc.divide();
     $("#operation").text(calc.operation.join(" "))
+  });
+  $("#del").click(function(){
+    calc.delete();
+    $("#operation").text(calc.operation.join(" "))
+  });
+  $("#clear").click(function(){
+    calc.clear();
+    $("#operation").text(0)
+  });
+  $("#CE").click(function(){
+    calc.clear();
+    $("#operation").text(0)
+    $("#result").text(0)
   });
   $("#equals").click(function(){
     $("#result").text(calc.equals())
